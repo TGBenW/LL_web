@@ -52,6 +52,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off', // Turn off the rule that requires React to be in scope
     'react-hooks/rules-of-hooks': 'error', // Add the React Hooks rules
     'react-hooks/exhaustive-deps': 'warn',
+    'space-before-function-paren': ['error', 'always'],
   },
   settings: {
     react: {
