@@ -1,12 +1,13 @@
 import React from 'react'
+import styles from './Footer.module.sass'
 
 function Footer () {
   return (
-    <footer>
-      <div className="logo">
-        <img src="./img/vertical-logo.png" alt="Little Lemon logo"/>
+    <footer className={styles.footer}>
+      <div className={styles.logo}>
+        <img src="./img/vertical-logo.png" alt="Little Lemon logo" />
       </div>
-      <nav className="doormat-nav">
+      <nav className={styles.doormatNav}>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -16,7 +17,7 @@ function Footer () {
           <li><a href="#login">Login</a></li>
         </ul>
       </nav>
-      <div className="contact">
+      <div className={styles.contact}>
         <h3>Contact</h3>
         <ul>
           <li><a href="#">123 Main St, Chicago</a></li>
@@ -24,7 +25,7 @@ function Footer () {
           <li><a href="#">Email</a></li>
         </ul>
       </div>
-      <div className="social-media-links">
+      <div className={styles.socialMediaLinks}>
         <h3>Social media</h3>
         <ul>
           <li><a href="#">Instagram</a></li>

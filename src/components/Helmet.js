@@ -15,6 +15,8 @@ function Nav () {
       <meta name="twitter:title" content="Little Lemon - Chicago Restaurant" />
       <meta name="twitter:description" content="Little Lemon restaurant in Chicago. Offers online ordering, table booking, specials, reviews and info about the restaurant." />
       <meta name="twitter:image" content="https://example.com/little-lemon-logo.png" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" />
     </Helmet>
   )
 }
