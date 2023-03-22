@@ -1,0 +1,72 @@
+// src/components/Highlights/Highlights.module.sass
+
+@import './../../_variables'
+
+.highlights
+  padding: 2rem
+
+.heading
+  font-size: 1.5rem
+  color: $primary-color-1
+  margin-bottom: 2rem
+
+.button
+  background-color: $secondary-color-1
+  border: none
+  padding: 0.5rem 1rem
+  color: white
+  font-weight: bold
+  cursor: pointer
+  transition: background-color 0.3s
+  margin-bottom: 2rem
+
+  &:hover
+    background-color: $secondary-color-2
+
+  &:active
+    background-color: $active-color
+
+.cards
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 1.5rem
+
+  .card
+    background-color: $highlight-color-1
+    padding: 1rem
+    border-radius: 5px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+    &-image
+      height: 200px
+      width: auto
+      object-fit: cover
+      border-radius: 5px
+      margin-bottom: 1rem
+
+    &-name
+      font-size: 1.25rem
+      color: $primary-color-2
+      margin-bottom: 0.5rem
+
+    &-price
+      font-size: 1rem
+      color: $highlight-color-2
+      margin-bottom: 1rem
+
+    &-description
+      font-size: 0.875rem
+      color: $highlight-color-2
+      margin-bottom: 1rem
+
+    &-link
+      font-size: 0.875rem
+      color: $primary-color-1
+      text-decoration: none
+      transition: color 0.3s
+
+      &:hover
+        color: $primary-color-2
+
+      &:active
+        color: $active-color

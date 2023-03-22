@@ -1,0 +1,73 @@
+$primary-color-1: #495E57
+$primary-color-2: #F4CE14
+$secondary-color-1: #EE9922
+$secondary-color-2: #FBDABB
+$highlight-color-1: #EDEFEE
+$highlight-color-2: #333333
+
+// Fonts
+$markazi-text: 'Markazi Text', serif
+$karla: 'Karla', sans-serif
+
+// Base font size
+$base-font-size: 20pt
+
+.footer
+  background: $primary-color-1
+  padding: 2rem
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  font-family: $karla
+
+.contact
+  padding: 1rem
+  border-radius: 0.5rem
+  color: $highlight-color-1
+
+.contact h3
+  font-family: $markazi-text
+  font-weight: 500
+  font-size: $base-font-size
+  text-transform: uppercase
+
+.contact ul
+  font-size: 0.65 * $base-font-size
+  line-height: 1.5
+  max-width: 65ch
+
+.contact li
+  margin-bottom: 0.5rem
+
+.logo, .doormatNav, .socialMediaLinks
+  margin-bottom: 1rem
+  flex-basis: 20%
+  min-width: 200px
+
+.doormatNav ul, .socialMediaLinks ul
+  list-style: none
+  padding: 0
+
+.doormatNav li, .socialMediaLinks li
+  margin-bottom: 0.5rem
+
+.doormatNav h3, .socialMediaLinks h3
+  font-family: $markazi-text
+  font-weight: 500
+  font-size: $base-font-size
+  text-transform: uppercase
+
+.doormatNav ul, .socialMediaLinks ul
+  font-size: 0.65 * $base-font-size
+  line-height: 1.5
+  max-width: 65ch
+
+.doormatNav a, .socialMediaLinks a
+  text-decoration: none
+  color: $highlight-color-1
+  &:hover
+    color: $primary-color-2
+    text-decoration: underline
+  &:active
+    color: $secondary-color-1
