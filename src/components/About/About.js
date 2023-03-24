@@ -6,8 +6,8 @@ function About () {
   return (
     <section className={styles.about}>
       <div className={styles['about-text']}>
-        <h2 className={styles.heading}>About</h2>
-        <p>
+        <h2 className={styles['about-heading']}>About</h2>
+        <p className={styles['about-text']}>
           Little Lemon is a restaurant in the heart of downtown. We serve delicious food and drinks.
         </p>
       </div>

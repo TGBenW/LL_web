@@ -2,7 +2,7 @@
 
 .about
   display: flex
-  padding: 2rem
+  padding: 14rem 0
   justify-content: space-between
   height: 400px
 
@@ -27,12 +27,10 @@
       left: 65%
       z-index: 2
 
-.heading
-  font-size: 1.5rem
-  color: $primary-color-1
-  margin-bottom: 1rem
+  &-heading
+    @include section-title
+    margin-bottom: 1rem
 
-  p
-    font-size: 1rem
-    color: $highlight-color-2
+  &-text
+    @include paragraph-text
     line-height: 1.5

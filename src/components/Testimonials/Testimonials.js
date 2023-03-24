@@ -1,33 +1,37 @@
 import React from 'react'
 
 import styles from './Testimonials.module.sass'
+import customer1 from './../../img/customer-1.jpg'
+import customer2 from './../../img/customer-2.jpg'
+import customer3 from './../../img/customer-3.jpg'
+import customer4 from './../../img/customer-4.jpg'
 
 function Testimonials () {
   const reviews = [
     {
       stars: '★★★★★',
-      imgSrc: './img/customer-1.jpg',
+      imgSrc: customer1,
       name: 'John Doe',
       date: '2023-03-01',
       text: 'Great service and delicious food. Highly recommended!'
     },
     {
       stars: '★★★★☆',
-      imgSrc: './img/customer-2.jpg',
+      imgSrc: customer2,
       name: 'Jane Smith',
       date: '2023-02-28',
       text: 'Nice atmosphere, good food, and friendly staff.'
     },
     {
       stars: '★★★★★',
-      imgSrc: './img/customer-3.jpg',
+      imgSrc: customer3,
       name: 'Mary Johnson',
       date: '2023-02-25',
       text: 'Excellent food and service, will definitely come back!'
     },
     {
       stars: '★★★★★',
-      imgSrc: './img/customer-4.jpg',
+      imgSrc: customer4,
       name: 'Emily Brown',
       date: '2023-03-18',
       text: 'Amazing food, great atmosphere, highly recommended!'
@@ -45,7 +49,7 @@ function Testimonials () {
             <div className={styles['card-box']}>
               <img
                 src={review.imgSrc}
-                alt={`${review.name}`}
+                alt={`Profile picture of ${review.name}`}
                 className={styles['card-image']}
               />
               <div className={styles['card-content']}>
