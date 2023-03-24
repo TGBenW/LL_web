@@ -24,6 +24,13 @@ function Testimonials () {
       name: 'Mary Johnson',
       date: '2023-02-25',
       text: 'Excellent food and service, will definitely come back!'
+    },
+    {
+      stars: '★★★★★',
+      imgSrc: './img/customer-4.jpg',
+      name: 'Emily Brown',
+      date: '2023-03-18',
+      text: 'Amazing food, great atmosphere, highly recommended!'
     }
   ]
 
@@ -35,13 +42,17 @@ function Testimonials () {
         {reviews.map((review, index) => (
           <div key={index} className={styles.card}>
             <p className={styles['card-stars']}>{review.stars}</p>
-            <img
-              src={review.imgSrc}
-              alt={`${review.name}`}
-              className={styles['card-image']}
-            />
-            <h3 className={styles['card-name']}>{review.name}</h3>
-            <p className={styles['card-date']}>{review.date}</p>
+            <div className={styles['card-box']}>
+              <img
+                src={review.imgSrc}
+                alt={`${review.name}`}
+                className={styles['card-image']}
+              />
+              <div className={styles['card-content']}>
+                <h3 className={styles['card-name']}>{review.name}</h3>
+                <p className={styles['card-date']}>{review.date}</p>
+              </div>
+            </div>
             <p className={styles['card-text']}>{review.text}</p>
           </div>
         ))}

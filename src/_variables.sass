@@ -1,16 +1,107 @@
-// $img-path: './../../../public/img'
+// first of all we have more colors:
+// $primary-color-1: #495E57
+// $primary-color-2: #F4CE14
+// $secondary-color-1: #EE9922
+// $secondary-color-2: #FBDABB
+// $highlight-color-1: #EDEFEE
+// $highlight-color-2: #333333
 
+// then, we need another color for $active-color
+
+// and, after all, let's make some mixins for better use in styling according to our type system
+
+// Display Title - Medium 64pt - Markazi Text font
+
+// Sub title - keep close to display Regular 40pt - Markazi Text font
+
+// Lead text! Use this for descriptive items to catch attention! e.g. home page or CTA (Call to action)
+// Medium 18pt - Karla font
+
+// SECTION TITLE! UPPERCASE 20pt EXTRA BOLD - Karla font
+
+// This weeks specials! Section categories 16pt Extra Bold - Karla font
+
+// Card Title 18pt Bold - Karla font
+
+// Paragraph text regular 16pt  - Karla font
+// 1.5 line height
+// Max 65 characters per line.
+
+// Highlight text e.g. price medium 16pt  - Karla font
+
+// Colors
+// #49SE57
+// #F4CE14
+
+// Colors
 $primary-color-1: #495E57
 $primary-color-2: #F4CE14
 $secondary-color-1: #EE9922
 $secondary-color-2: #FBDABB
 $highlight-color-1: #EDEFEE
 $highlight-color-2: #333333
-$active-color: red
+$active-color: #00A4EF
 
 // Fonts
 $markazi-text: 'Markazi Text', serif
 $karla: 'Karla', sans-serif
 
-// Base font size
-$base-font-size: 20pt
+// Font Sizes
+$display-title-font-size: 64pt
+$subtitle-font-size: 40pt
+$lead-text-font-size: 18pt
+$section-title-font-size: 20pt
+$section-category-font-size: 16pt
+$card-title-font-size: 18pt
+$paragraph-text-font-size: 16pt
+$highlight-text-font-size: 16pt
+
+// Font Weights
+$extra-bold: 800
+$bold: 700
+$medium: 500
+$regular: 400
+
+// Mixins
+@mixin display-title
+  font-family: $markazi-text
+  font-size: 64pt
+  font-weight: $medium
+
+@mixin subtitle
+  font-family: $markazi-text
+  font-size: 40pt
+  font-weight: $regular
+
+@mixin lead-text
+  font-family: $karla
+  font-size: 18pt
+  font-weight: $medium
+
+@mixin section-title
+  font-family: $karla
+  font-size: 20pt
+  font-weight: $extra-bold
+  text-transform: uppercase
+
+@mixin section-category
+  font-family: $karla
+  font-size: 16pt
+  font-weight: $extra-bold
+
+@mixin card-title
+  font-family: $karla
+  font-size: 18pt
+  font-weight: $bold
+
+@mixin paragraph-text
+  font-family: $karla
+  font-size: 16pt
+  font-weight: $regular
+  line-height: 1.5
+  max-width: 65ch
+
+@mixin highlight-text
+  font-family: $karla
+  font-size: 16pt
+  font-weight: $medium
