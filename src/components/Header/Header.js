@@ -3,12 +3,16 @@ import Nav from '../Nav/Nav'
 
 import styles from './Header.module.sass'
 
+import logo from './../../img/logo.png'
+
 function Header () {
   return (
-    <header className={styles.header}>
-      <img src="./img/logo.svg" alt="Little Lemon logo" className={styles['header-logo']} />
-      <Nav />
-    </header>
+    <div className={styles['header-wrapper']}>
+      <header className={styles.header}>
+        <img src={logo} alt="Little Lemon logo" className={styles['header-logo']} />
+        <Nav />
+      </header>
+    </div>
   )
 }
 

@@ -1,22 +1,28 @@
 @import './../../_variables'
 
 .highlights
-  padding: 2rem
+  padding: 2rem 5rem
+
+  &-wrapper
+    background-color: $section-background-highlights
+    width: 100%
 
 .heading
   @include section-title
   margin-bottom: 2rem
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .button
   background-color: $secondary-color-1
   border: none
-  padding: 0.5rem 1rem
+  padding: 0.8rem 2rem // Updated padding for a better button design
   border-radius: 16px
   color: $highlight-color-1
   font-weight: $bold
   cursor: pointer
   transition: background-color 0.3s
-  margin-bottom: 2rem
 
   &:hover
     background-color: $secondary-color-2
@@ -34,9 +40,35 @@
     padding: 1rem
     border-radius: 16px
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+    display: flex
+    flex-direction: column
 
     &-image
       height: 200px
       width: auto
       object-fit: cover
       border-radius: 16px
+      margin-bottom: 1rem
+
+    &-name
+      display: inline-block
+      font-weight: $bold
+      margin-right: auto
+
+    &-price
+      display: inline-block
+      font-weight: $bold
+
+    &-description
+      flex-grow: 1
+      margin-top: 0.5rem
+
+    &-link
+      display: inline-block
+      color: $secondary-color-1
+      text-decoration: none
+      font-weight: $bold
+      margin-top: 0.5rem
+
+      &:hover
+        color: $active-color

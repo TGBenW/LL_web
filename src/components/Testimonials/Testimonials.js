@@ -39,29 +39,30 @@ function Testimonials () {
   ]
 
   return (
-    <section className={styles.testimonials}>
-      <h2 className={styles.heading}>Testimonials</h2>
-      <p className={styles.subheading}>What our clients say about us</p>
-      <div className={styles.cards}>
-        {reviews.map((review, index) => (
-          <div key={index} className={styles.card}>
-            <p className={styles['card-stars']}>{review.stars}</p>
-            <div className={styles['card-box']}>
-              <img
-                src={review.imgSrc}
-                alt={`Profile picture of ${review.name}`}
-                className={styles['card-image']}
-              />
-              <div className={styles['card-content']}>
-                <h3 className={styles['card-name']}>{review.name}</h3>
-                <p className={styles['card-date']}>{review.date}</p>
+    <div className={styles['testimonials-wrapper']}>
+      <section className={styles.testimonials}>
+        <h2 className={styles.heading}>Testimonials</h2>
+        <div className={styles.cards}>
+          {reviews.map((review, index) => (
+            <div key={index} className={styles.card}>
+              <p className={styles['card-stars']}>{review.stars}</p>
+              <div className={styles['card-box']}>
+                <img
+                  src={review.imgSrc}
+                  alt={`Profile picture of ${review.name}`}
+                  className={styles['card-image']}
+                />
+                <div className={styles['card-content']}>
+                  <h3 className={styles['card-name']}>{review.name}</h3>
+                  <p className={styles['card-date']}>{review.date}</p>
+                </div>
               </div>
+              <p className={styles['card-text']}>{review.text}</p>
             </div>
-            <p className={styles['card-text']}>{review.text}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   )
 }
 

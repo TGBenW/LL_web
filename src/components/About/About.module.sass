@@ -2,29 +2,39 @@
 
 .about
   display: flex
-  padding: 14rem 0
+  padding: 6rem 5rem
   justify-content: space-between
   height: 400px
+
+  &-wrapper
+    background-color: $section-background-about
+    width: 100%
 
   &-text
     flex-basis: 45%
 
   &-images
     flex-basis: 45%
+    display: flex
+    justify-content: center
+    align-items: center
     position: relative
 
   &-image
     position: absolute
-    top: 10%
     width: 200px
     height: 300px
     object-fit: cover
-    object-position: -200px 0px
     z-index: 1
 
+    &:first-child
+      right: 25%
+      top: 50%
+      transform: translateY(-50%)
+
     &:nth-child(2)
-      top: -10%
       left: 65%
+      top: 40%
       z-index: 2
 
   &-heading

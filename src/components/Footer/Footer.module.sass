@@ -4,9 +4,13 @@
   display: flex
   justify-content: space-between
   align-items: flex-start
-  background-color: $primary-color-1
-  padding: 2rem
+  padding: 2rem 5rem
   color: $highlight-color-1
+
+  &-wrapper
+    background-color: $section-background-footer
+    width: 100%
+    border-radius: 0 0 16px 16px
 
 .logo
   img
@@ -28,6 +32,8 @@
     color: $highlight-color-1
     text-decoration: none
     font-size: $paragraph-text-font-size
+    font-weight: $regular
+    transition: color 0.2s ease-in-out
 
     &:hover
       color: $active-color
@@ -35,4 +41,5 @@
 .contact, .socialMediaLinks
   h3
     @include section-category
+    font-weight: $bold
     margin-bottom: 1rem
