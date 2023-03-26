@@ -18,6 +18,11 @@
     height: auto
 
 .doormatNav, .contact, .socialMediaLinks
+  h3
+    @include section-category
+    font-weight: $bold
+    margin-bottom: 1rem
+
   ul
     list-style-type: none
     padding: 0
@@ -31,15 +36,10 @@
   a
     color: $highlight-color-1
     text-decoration: none
+    font-family: $karla
     font-size: $paragraph-text-font-size
     font-weight: $regular
     transition: color 0.2s ease-in-out
 
     &:hover
       color: $active-color
-
-.contact, .socialMediaLinks
-  h3
-    @include section-category
-    font-weight: $bold
-    margin-bottom: 1rem

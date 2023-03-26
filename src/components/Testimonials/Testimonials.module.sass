@@ -47,6 +47,9 @@
 
     &-content
       flex: 1
+      display: flex
+      flex-direction: column
+      justify-content: center
 
     &-name
       @include card-title
@@ -56,8 +59,10 @@
     &-date
       @include highlight-text
       margin-top: 0.5rem
-      color: $text-color-light // Change the color to make the date stand out
+      color: $text-color-light
 
     &-text
       @include paragraph-text
-      color: $text-color-light // Change the color to make the text more readable
+      color: $text-color-light
+      flex-grow: 1
+      margin-top: 1rem

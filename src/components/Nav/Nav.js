@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './Nav.module.sass'
 
@@ -6,12 +7,36 @@ function Nav () {
   return (
     <nav className={styles.nav}>
       <ul className={styles.ul}>
-        <li className={styles.li}><a href="#home" className={styles.a}>Home</a></li>
-        <li className={styles.li}><a href="#about" className={styles.a}>About</a></li>
-        <li className={styles.li}><a href="#menu" className={styles.a}>Menu</a></li>
-        <li className={styles.li}><a href="#reservations" className={styles.a}>Reservations</a></li>
-        <li className={styles.li}><a href="#order-online" className={styles.a}>Order online</a></li>
-        <li className={styles.li}><a href="#login" className={styles.a}>Login</a></li>
+        <li className={styles.li}>
+          <Link to="/" className={styles.a}>
+            Home
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="/about" className={styles.a}>
+            About
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="/menu" className={styles.a}>
+            Menu
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="/reservations" className={styles.a}>
+            Reservations
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="/order-online" className={styles.a}>
+            Order online
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="/login" className={styles.a}>
+            Login
+          </Link>
+        </li>
       </ul>
     </nav>
   )

@@ -12,23 +12,23 @@ function Highlights () {
   const specials = [
     {
       imgSrc: special1,
-      name: 'Special Dish 1',
-      price: '$12.99',
-      description: 'A delicious and mouth-watering special dish.',
+      name: 'Savory Shrimp Scampi',
+      price: '$18.99',
+      description: 'Shrimp sautéed in garlic butter sauce, served with linguine and fresh parsley.',
       orderLink: '#'
     },
     {
       imgSrc: special2,
-      name: 'Special Dish 2',
-      price: '$14.99',
-      description: 'A delightful mix of flavors to surprise your taste buds.',
+      name: 'Balsamic Glazed Salmon',
+      price: '$21.99',
+      description: 'Pan-seared salmon with a sweet and tangy balsamic glaze, accompanied by seasonal vegetables.',
       orderLink: '#'
     },
     {
       imgSrc: special3,
-      name: 'Special Dish 3',
-      price: '$16.99',
-      description: 'A satisfying and filling meal, perfect for any occasion.',
+      name: 'Spinach & Feta Stuffed Chicken',
+      price: '$19.99',
+      description: 'Spinach and feta stuffed chicken breast, paired with creamy garlic mashed potatoes.',
       orderLink: '#'
     }
   ]
@@ -48,8 +48,10 @@ function Highlights () {
               alt={`${special.name}`}
               className={styles['card-image']}
             />
-            <h3 className={styles['card-name']}>{special.name}</h3>
-            <p className={styles['card-price']}>{special.price}</p>
+            <div className={styles['card-box']}>
+              <h3 className={styles['card-name']}>{special.name}</h3>
+              <p className={styles['card-price']}>{special.price}</p>
+            </div>
             <p className={styles['card-description']}>
               {special.description}
             </p>
