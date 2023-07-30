@@ -1,0 +1,62 @@
+.hero-wrapper {
+  background-color: #EDEFEE;
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  gap: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 64pt;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-family: "Karla", sans-serif;
+  font-size: 18pt;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.hero-image {
+  width: auto;
+  height: 500px;
+  border-radius: 16px;
+}
+
+.hero-button {
+  background-color: #495E57;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 0.8rem 2rem;
+  color: #EDEFEE;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #3e504a;
+  border-color: #EDEFEE;
+}
+
+.hero-button:active {
+  background-color: #F49C14;
+  color: #4A4A4A;
+}

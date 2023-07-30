@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.header-wrapper {
+  background-color: #495E57;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.header-logo {
+  height: 3rem;
+  width: auto;
+}

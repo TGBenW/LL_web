@@ -1,0 +1,25 @@
+@import './../../_variables'
+
+.successMessage
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  font-family: $karla
+  font-size: $lead-text-font-size
+  font-weight: $extra-bold
+  color: $primary-color-1
+  background-color: $section-background-about-soft
+  border-radius: 5px
+  padding: 20px
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+  backdrop-filter: blur(10px)
+  margin: 20px
+  animation: fadeIn 2s
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1

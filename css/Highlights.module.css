@@ -1,0 +1,99 @@
+.highlights {
+  padding: 2rem 5rem;
+}
+
+.highlights-wrapper {
+  background-color: #FBDABB;
+  width: 100%;
+}
+
+.heading {
+  font-family: "Karla", sans-serif;
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background-color: #EE9922;
+  border: 2px solid transparent;
+  padding: 0.8rem 2rem;
+  border-radius: 16px;
+  color: #EDEFEE;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background-color: #e58d12;
+  border-color: #EDEFEE;
+}
+
+.button:active {
+  background-color: #F49C14;
+  color: #4A4A4A;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cards .card {
+  background-color: #EDEFEE;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards .card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.cards .card-box {
+  display: flex;
+}
+
+.cards .card-name {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.cards .card-price {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.cards .card-description {
+  flex-grow: 1;
+  margin-top: 0.5rem;
+}
+
+.cards .card-link {
+  display: inline-block;
+  color: #EE9922;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.cards .card-link:hover {
+  color: #F49C14;
+}

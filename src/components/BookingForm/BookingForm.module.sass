@@ -1,0 +1,71 @@
+@import './../../_variables'
+
+.form
+  font-family: $karla
+  color: $highlight-color-2 // Dark text on a light background
+  font-size: $paragraph-text-font-size
+  background-color: rgba($highlight-color-1, 0.8) // Semi-transparent light background
+  border-radius: 5px
+  padding: 20px
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1) // Creates a 'glass' effect with subtle depth
+  backdrop-filter: blur(10px) // Adds to the 'glass' effect by blurring the background
+
+.label
+  margin-bottom: 5px
+
+.row
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 20px
+
+.column100
+  flex: 0 0 98%
+  padding: 5px
+
+.column50
+  flex: 0 0 45%
+  padding: 5px
+
+.column25
+  flex: 0 0 25%
+  padding: 5px
+
+.input, .select
+  width: 100%
+  padding: 10px
+  margin-bottom: 10px
+  border: 1px solid $secondary-color-2
+  border-radius: 5px
+  background-color: $highlight-color-1 // Light background
+  color: $highlight-color-2 // Dark color for text
+  &:focus
+    outline: none
+    border-color: $active-color
+
+.radioGroup
+  display: flex
+  flex-wrap: wrap
+  column-gap: 20px
+  row-gap: 5px
+
+.submit
+  display: block // to allow the button to be centered
+  margin: auto // to center the button
+  width: 60% // adjust width according to your preference
+  background-color: $primary-color-1
+  border: 2px solid transparent
+  border-radius: 16px
+  padding: 0.8rem 2rem
+  color: $highlight-color-1
+  font-weight: $bold
+  cursor: pointer
+  transition: background-color 0.3s, transform 0.3s, color 0.3s, border-color 0.3s
+
+  &:hover
+    background-color: darken($primary-color-1, 5%)
+    border-color: $highlight-color-1
+
+  &:active
+    background-color: $active-color
+    color: $text-color-light

@@ -1,0 +1,33 @@
+@keyframes movingBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(circle at 50% 50%, #495E57, #EE9922, #333333);
+  background-size: 400% 400%;
+  animation: movingBackground 20s ease-in-out infinite;
+}
+
+.app-header {
+  flex: 0 1 auto;
+}
+
+.app-main {
+  flex: 1 1 auto;
+}
+
+.app-footer {
+  flex: 0 1 auto;
+}

@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 10%;
+  padding: 2rem 5rem;
+  color: #EDEFEE;
+}
+
+.footer-wrapper {
+  background-color: #495E57;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.doormatNav h3, .contact h3, .socialMediaLinks h3 {
+  font-family: "Karla", sans-serif;
+  font-size: 16pt;
+  font-weight: 800;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.doormatNav ul, .contact ul, .socialMediaLinks ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.doormatNav li, .contact li, .socialMediaLinks li {
+  margin-bottom: 0.5rem;
+}
+
+.doormatNav a, .contact a, .socialMediaLinks a {
+  color: #EDEFEE;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  transition: color 0.2s ease-in-out;
+}
+
+.doormatNav a:hover, .contact a:hover, .socialMediaLinks a:hover {
+  color: #F49C14;
+}
